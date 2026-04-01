@@ -1,0 +1,14 @@
+{
+    "bot_settings": {
+        "min_profit_threshold": 0.015,
+        "check_interval_seconds": 2,
+        "max_capital_per_trade_usd": 50
+    },
+    "active_markets": [
+        {
+            "name": "Madrid vs Barca",
+            "poly_token_id": "ID_TOKEN_YES_POLYGON",
+            "betdex_market_pubkey": "ALAMAT_MARKET_BETDEX"
+        }
+    ]
+}
