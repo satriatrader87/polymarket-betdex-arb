@@ -1,14 +1,19 @@
 {
-    "bot_settings": {
-        "min_profit_threshold": 0.015,
-        "check_interval_seconds": 2,
-        "max_capital_per_trade_usd": 50
-    },
-    "active_markets": [
-        {
-            "name": "Madrid vs Barca",
-            "poly_token_id": "ID_TOKEN_YES_POLYGON",
-            "betdex_market_pubkey": "ALAMAT_MARKET_BETDEX"
-        }
-    ]
+  "bot_settings": {
+    "max_capital_usd": 100,
+    "min_profit_threshold": 0.015,
+    "check_interval_seconds": 5
+  },
+  "jito_settings": {
+    "jito_engine_url": "https://mainnet.block-engine.jito.wtf/api/v1/bundles",
+    "jito_tip_account": "ADa6H78A3p4qWf7YWSycSXW8yXCcS6CGwPB8jzGFuBYe",
+    "default_tip_lamports": 100000
+  },
+  "active_markets": [
+    {
+      "name": "Match A vs B",
+      "poly_token_id": "12345...",
+      "betdex_market_pubkey": "ABCDE..."
+    }
+  ]
 }
