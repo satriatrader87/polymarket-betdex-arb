@@ -8,11 +8,24 @@ Bot Arbitrase Lintas-Chain (Cross-Chain) otomatis yang dirancang untuk mendeteks
 
 Proyek ini dibangun dengan arsitektur modular untuk memisahkan logika bisnis, penyedia data, dan manajemen risiko:
 
-- **`core/`**: Orchestrator utama yang menghubungkan data pasar dengan logika eksekusi.
-- **`engine/`**: Otak kalkulasi yang menangani matematika arbitrase, Kelly Criterion, dan analisis slippage.
-- **`providers/`**: Modul komunikasi API untuk Polymarket (Polygon) dan BetDEX (Solana).
-- **`discovery.py`**: Alat bantu untuk mencari Token ID pertandingan yang sedang aktif secara otomatis.
-- **`main.py`**: File utama untuk menjalankan bot dalam mode pemantauan (Scanning).
+```text
+polymarket-betdex-arb/
+├── core/
+│   ├── orchestrator.py   # Konduktor utama alur data & eksekusi
+│   └── logger.py         # Utilitas pencatatan aktivitas terminal
+├── engine/
+│   ├── calculator.py     # Logika Matematika (Arbi & Kelly Criterion)
+│   ├── risk_manager.py   # Validasi ambang batas profit & modal
+│   └── market_depth.py   # Analisis likuiditas & rata-rata harga (Slippage)
+├── providers/
+│   ├── base.py           # Abstract Base Class untuk provider
+│   ├── polymarket.py     # Integrasi CLOB API Polymarket
+│   └── betdex.py         # Integrasi Monaco Protocol Solana
+├── discovery.py          # Script otomatis mencari Market ID aktif
+├── main.py               # Titik masuk utama aplikasi (Entry Point)
+├── .env.example          # Template untuk kunci privat & RPC
+└── example.config.json   # Template konfigurasi target pasar
+```
 
 ---
 
