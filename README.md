@@ -10,6 +10,9 @@ Proyek ini dibangun dengan arsitektur modular untuk memisahkan logika bisnis, pe
 
 ```text
 polymarket-betdex-arb/
+├── README.md
+├── requirements.txt
+├── LICENSE
 ├── core/
 │   ├── orchestrator.py   # Konduktor utama alur data & eksekusi
 │   └── logger.py         # Utilitas pencatatan aktivitas terminal
