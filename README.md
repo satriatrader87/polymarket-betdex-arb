@@ -27,39 +27,44 @@ Proyek ini dibangun dengan arsitektur modular untuk memisahkan logika bisnis, pe
 
 ## 🚀 Panduan Instalasi
 
-### 1. Kloning Repositori
+### 1. Kloning Repository
 ```bash
 git clone [https://github.com/username/polymarket-betdex-arb.git](https://github.com/username/polymarket-betdex-arb.git)
 cd polymarket-betdex-arb
 ```
-2. Instalasi Dependensi
+### 2. Instalasi Dependensi
 Pastikan Anda memiliki Python 3.10 atau lebih baru, lalu jalankan:
 
 Bash
 pip install -r requirements.txt
-3. Konfigurasi Environment
+
+### 3. Konfigurasi Environment
 Salin template .env.example menjadi .env dan masukkan Private Key serta RPC Node Anda:
 
 Bash
 cp .env.example .env
-4. Konfigurasi Market
+
+### 4. Konfigurasi Market
 Gunakan skrip discovery untuk mendapatkan daftar pasar terbaru atau salin template config:
 
 Bash
 cp example.config.json config.json
 python discovery.py
-⚙️ Cara Menjalankan
+
+### ⚙️ Cara Menjalankan
 Mode Pemantauan (Dry-Run)
 Untuk menjalankan bot dalam mode memantau peluang tanpa melakukan transaksi asli (Aman untuk tes):
 
 Bash
 python main.py
-Mode Pencarian Market
+
+### Mode Pencarian Market
 Untuk memperbarui file config.json dengan daftar pertandingan yang sedang aktif di Polymarket:
 
 Bash
 python discovery.py
-🛡️ Strategi Keamanan Modal
+
+### 🛡️ Strategi Keamanan Modal
 Untuk mencapai Winrate 70%+ dan menjaga modal tetap utuh, bot ini menerapkan:
 
 Atomic Logic Check: Memastikan harga di kedua bursa sinkron sebelum memberikan sinyal.
@@ -68,7 +73,7 @@ Conservative Kelly: Hanya menggunakan sebagian kecil dari saldo (Fractional Kell
 
 Liquidity Filter: Mengabaikan pasar dengan volume rendah yang berisiko menjebak modal.
 
-⚠️ Disclaimer
+### ⚠️ Disclaimer
 Penggunaan bot ini melibatkan risiko finansial tinggi.
 
 Execution Risk: Ada kemungkinan satu sisi taruhan tereksekusi sementara sisi lainnya gagal karena perubahan harga mendadak.
@@ -79,5 +84,5 @@ API Latency: Keterlambatan data RPC dapat mempengaruhi keakuratan peluang.
 
 Gunakan hanya dana yang Anda siap untuk rugi. Penulis tidak bertanggung jawab atas segala kerugian yang timbul dari penggunaan software ini.
 
-📄 Lisensi
+### 📄 Lisensi
 Proyek ini dilisensikan di bawah MIT License.
