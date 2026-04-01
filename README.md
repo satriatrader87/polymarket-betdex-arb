@@ -45,7 +45,7 @@ polymarket-betdex-arb/
 
 ### 1. Kloning Repository
 ```bash
-git clone [https://github.com/username/polymarket-betdex-arb.git](https://github.com/username/polymarket-betdex-arb.git)
+git clone [https://github.com/username/polymarket-betdex-arb.git](https://github.com/satriatradet87/polymarket-betdex-arb.git)
 cd polymarket-betdex-arb
 ```
 ### 2. Instalasi Dependensi
