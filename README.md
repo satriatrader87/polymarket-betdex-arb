@@ -51,20 +51,20 @@ Bash
 cp example.config.json config.json
 python discovery.py
 
-### ⚙️ Cara Menjalankan
+## ⚙️ Cara Menjalankan
 Mode Pemantauan (Dry-Run)
 Untuk menjalankan bot dalam mode memantau peluang tanpa melakukan transaksi asli (Aman untuk tes):
 
 Bash
 python main.py
 
-### Mode Pencarian Market
+## Mode Pencarian Market
 Untuk memperbarui file config.json dengan daftar pertandingan yang sedang aktif di Polymarket:
 
 Bash
 python discovery.py
 
-### 🛡️ Strategi Keamanan Modal
+## 🛡️ Strategi Keamanan Modal
 Untuk mencapai Winrate 70%+ dan menjaga modal tetap utuh, bot ini menerapkan:
 
 Atomic Logic Check: Memastikan harga di kedua bursa sinkron sebelum memberikan sinyal.
@@ -73,7 +73,7 @@ Conservative Kelly: Hanya menggunakan sebagian kecil dari saldo (Fractional Kell
 
 Liquidity Filter: Mengabaikan pasar dengan volume rendah yang berisiko menjebak modal.
 
-### ⚠️ Disclaimer
+## ⚠️ Disclaimer
 Penggunaan bot ini melibatkan risiko finansial tinggi.
 
 Execution Risk: Ada kemungkinan satu sisi taruhan tereksekusi sementara sisi lainnya gagal karena perubahan harga mendadak.
@@ -84,5 +84,5 @@ API Latency: Keterlambatan data RPC dapat mempengaruhi keakuratan peluang.
 
 Gunakan hanya dana yang Anda siap untuk rugi. Penulis tidak bertanggung jawab atas segala kerugian yang timbul dari penggunaan software ini.
 
-### 📄 Lisensi
+## 📄 Lisensi
 Proyek ini dilisensikan di bawah MIT License.
